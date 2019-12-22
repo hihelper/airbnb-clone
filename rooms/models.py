@@ -70,7 +70,7 @@ class Room(core_models.TimeStampedModel):
 
     country = CountryField()
     city = models.CharField(max_length=80)
-    address = models.CharField(max_length=140)
+    address = models.CharField(max_length=150)
     guests = models.IntegerField()
     beds = models.IntegerField()
     bedrooms = models.IntegerField()
