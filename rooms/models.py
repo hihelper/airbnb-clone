@@ -56,14 +56,6 @@ class photo(core_models.TimeStampedModel):
 
 class Room(core_models.TimeStampedModel):
 
-    # fieldsets = [
-    # ('Room information', {'name': [models.CharField(max_length=140)], 'classes': ['collapse']}),
-
-    # ('Detail information', {'fields': ['pub_date'], 'classes': ['collapse']}),
-
-    # ('Use information', {'fields': ['pub_date'], 'classes': ['collapse']}),
-    # ]
-
     name = models.CharField(max_length=150)
     description = models.TextField()
     price = models.IntegerField()
