@@ -29,6 +29,7 @@ class User(AbstractUser):
     gender = models.CharField(choices=GENDER_CHOICES, max_length=10, blank=True)
     bio = models.TextField(default="", blank=True)  # 수업에서 default와 null=true에 대해서 배웠다.
     birthdate = models.DateField(blank=True, null=True)
+    job = models.CharField(max_length=20)
     language = models.CharField(choices=LANGUAGE_CHOICES, max_length=2, blank=True)
     currency = models.CharField(choices=CURRENCY_CHOICES, max_length=3, blank=True)
     superhost = models.BooleanField(default=False)
